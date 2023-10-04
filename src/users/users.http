@@ -1,0 +1,20 @@
+GET http://localhost:3000/v1/auth/1
+Accept: application/json
+
+###
+POST http://localhost:3000/v1/auth/signup
+Content-Type: application/json
+
+{
+  "email": "test3@test.ru",
+  "password": "12345fds"
+}
+
+###
+POST http://localhost:3000/v1/auth/signin
+Content-Type: application/json
+
+{
+  "email": "test3@test.ru",
+  "password": "12345fds"
+}

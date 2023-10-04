@@ -1,10 +1,4 @@
-import {
-  Entity,
-  PrimaryGeneratedColumn,
-  Column,
-  AfterInsert,
-  Unique,
-} from 'typeorm';
+import { Entity, PrimaryGeneratedColumn, Column, AfterInsert } from 'typeorm';
 
 @Entity()
 class User {
@@ -12,7 +6,6 @@ class User {
   id: number;
 
   @Column()
-  @Unique(['email'])
   email: string;
 
   @Column()
